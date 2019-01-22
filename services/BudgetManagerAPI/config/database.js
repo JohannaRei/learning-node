@@ -5,7 +5,6 @@ module.exports = (mongoose, config) => {
   mongoose.connect(
     config.database,
     {
-      useMongoClient: true,
       promiseLibrary: global.Promise
     }
   );
